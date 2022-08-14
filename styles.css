@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#nav-bar {
+    display: flex;
+    position: fixed;
+    background-color: #8FE3CF;
+    height: 3rem;
+    align-items: center;
+    padding: 5px;
+    flex-direction: row;
+}
+
+body {
+    margin: 50px 100px;
+    font-family: 'Lato', sans-serif;
+
+    display: flex;
+    place-items: center;
+}
+
+#header-img {
+    width: 200px;
+    margin-right: 460px;
+}
+
+.nav-link {
+    margin-right: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    display: flex;
+}
+
+#decimg {
+    width: 150%;
+    margin-left: 50px
+}
+
+.headingbox {
+    width: 40%;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 6rem 0;
+}
+
+#youtube {
+    margin: 56px;
+    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+}
+
+#price {
+    display: grid;
+
+    margin: 50px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#price h2.plate {
+    font-family: 'Rubik Dirt', cursive;
+    color: coral;
+    background-color: rgb(205, 213, 213);
+}
+
+.normal,
+.plus,
+.premium {
+    border: 2px solid grey;
+    padding: 40px;
+    width: 18rem;
+}
+
+footer {
+    text-align: center;
+}
+
+#submit {
+    border-radius: 20px;
+    background-color: yellow;
+    border: 2px solid grey;
+    width: 4rem;
+}
+
+#email {
+    width: 16rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid grey
+}
+
+#select {
+    border-radius: 7px;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+    color: rgb(170, 127, 255);
+    background-color: yellow;
+}
+
+#select:hover {
+    background-color: coral;
+    color: black;
+}
+
+hr {
+    border: 2px dotted coral;
+    width: 70%;
+}
+
+@media screen and (max-width:620px) {
+    #header-img {
+        width: 100px;
+        margin-right: 40px;
+    }
+
+    #decimg {
+        width: 260px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    body {margin: 2px;
+        width: 400px;
+        height: auto;
+    }
+
+    #products {place-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2rem 0;
+    }
+
+    #youtube {
+        margin: 26px;
+        /* justify-content: center; */
+        display: grid;
+        grid-template-columns: 1fr;
+        /* align-items: center; */
+    }
+
+    iframe {
+        width: 300px;
+        margin: 21px 10px;
+        height: 210px;
+    }
+
+    .headingbox {margin: 30px 10px;
+        display: grid;
+        text-align: center;
+        place-items: center;
+        position: relative;
+        left: 40px;
+
+        grid-template-columns: 1fr;
+    }
+    #price {
+        display: grid;
+    
+        margin: 50px;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    .nav-link {
+        margin-right: 10px;
+    }
+    .box{display: flex;
+        margin: 2px;
+    flex-direction: column;}
+    
+}
